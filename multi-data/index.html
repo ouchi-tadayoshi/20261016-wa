@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>複数のデータ</title>
+</head>
+<body>
+  <div id="app">
+    <h1>複数のデータ</h1>
+
+    <h2>和食</h2>
+    <ul>
+        <li v-for="food in japansesFoods">
+            {{ food,name }} ({{ food.price }}円)
+        </li>
+    </ul>
+
+    <h2>洋食</h2>
+    <ul>
+        <li v-for="food in westernFoods">
+            {{ food,name }} ({{ food.price }}円)
+        </li>
+    </ul>
+
+  </div>
+  
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
